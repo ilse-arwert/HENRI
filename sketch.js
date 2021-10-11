@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 800);
   recipes = json.recipes;
   
   // extract all of the ingredients from the inspiring set

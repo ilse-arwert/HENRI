@@ -1,13 +1,13 @@
 {
   "recipes": [
     {
-      "name": "beef chilli",
+      "name": "sugar cookies",
       "ingredients": [
-        { "amount": 150,  "unit": "g",  "ingredient": "minced beef" },
-        { "amount": 100,  "unit": "g",  "ingredient": "onion" },
-        { "amount": 100,  "unit": "ml", "ingredient": "water" },
-        { "amount": 300,  "unit": "g",  "ingredient": "tomato" },
-        { "amount": 5,    "unit": "g",  "ingredient": "chilli powder" },
+        { "amount": 187,  "unit": "g",  "ingredient": "all-purpose flour" },
+        { "amount": 2,  "unit": "g",  "ingredient": "baking soda" },
+        { "amount": 1,  "unit": "g", "ingredient": "baking powder" },
+        { "amount": 113,  "unit": "g",  "ingredient": "butter" },
+        { "amount": 0.75,    "unit": "cups",  "ingredient": "white sugar" },
         { "amount": 300,  "unit": "g",  "ingredient": "red kidney beans" }
       ]
     },
@@ -110,5 +110,8 @@
         { "amount": 60,   "unit": "ml", "ingredient": "double cream" }
       ]
     }    
+  ],
+  "ingredients": [
+    { "name":"flour",   "category":"flour" }
   ]
 }
