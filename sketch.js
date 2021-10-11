@@ -21,6 +21,7 @@ function setup() {
       allIngredients.push(i);
     }
   }
+  console.log(allIngredients);
 
   // create an initial population
   for (let i = 0; i < populationSize; i++) {

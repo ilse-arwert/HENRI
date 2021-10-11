@@ -1,61 +1,65 @@
 {
+  "_comment" : "recipes are normalized to 24 cookie yields",
   "recipes": [
     {
-      "name": "sugar cookies",
+      "name": "easy sugar cookies",
       "ingredients": [
         { "amount": 187,  "unit": "g",  "ingredient": "all-purpose flour" },
         { "amount": 2,  "unit": "g",  "ingredient": "baking soda" },
         { "amount": 1,  "unit": "g", "ingredient": "baking powder" },
-        { "amount": 113,  "unit": "g",  "ingredient": "butter" },
-        { "amount": 0.75,    "unit": "cups",  "ingredient": "white sugar" },
-        { "amount": 300,  "unit": "g",  "ingredient": "red kidney beans" }
-      ]
+        { "amount": 113,  "unit": "g",  "ingredient": "softened butter" },
+        { "amount": 150,    "unit": "g",  "ingredient": "white sugar" },
+        { "amount": 5,    "unit": "ml",  "ingredient": "vanilla extract" },
+        { "amount": 1,  "unit": "",  "ingredient": "eggs" }
+      ],
+      "baking time": 9,
+      "heat": 190
     },
     {
-      "name": "cabbage soup",
+      "name": "soft oatmeal cookies",
       "ingredients": [
-        { "amount": 80,   "unit": "g",  "ingredient": "carrot" },
-        { "amount": 100,  "unit": "g",  "ingredient": "onion" },
-        { "amount": 150,  "unit": "g",  "ingredient": "tomato" },
-        { "amount": 200,  "unit": "g",  "ingredient": "cabbage" },
-        { "amount": 5,    "unit": "g",  "ingredient": "dry onion soup mix" },
-        { "amount": 70,   "unit": "g",  "ingredient": "green bean" },
-        { "amount": 150,  "unit": "ml", "ingredient": "tomato juice" },
-        { "amount": 100,  "unit": "g",  "ingredient": "celery" },
-        { "amount": 100,  "unit": "ml", "ingredient": "beef broth" }
-      ]
+        { "amount": 272,  "unit": "g",  "ingredient": "all-purpose flour" },
+        { "amount": 5,  "unit": "g",  "ingredient": "baking soda" },
+        { "amount": 5,  "unit": "g",  "ingredient": "salt" },
+        { "amount": 7,  "unit": "g",  "ingredient": "ground cinnamon" },
+        { "amount": 220,  "unit": "g", "ingredient": "packed brown sugar" },
+        { "amount": 227,  "unit": "g",  "ingredient": "softened butter" },
+        { "amount": 201,    "unit": "g",  "ingredient": "white sugar" },
+        { "amount": 5,    "unit": "ml",  "ingredient": "vanilla extract" },
+        { "amount": 2,  "unit": "",  "ingredient": "eggs" },
+        { "amount": 255,  "unit": "g",  "ingredient": "quick cooking oats" }
+      ],
+      "baking time": 9,
+      "heat": 190
     },
     {
-      "name": "chicken soup",
+      "name": "inside-out chocolate-chip cookies",
       "ingredients": [
-        { "amount": 5,    "unit": "g",  "ingredient": "butter" },
-        { "amount": 50,   "unit": "g",  "ingredient": "onion" },
-        { "amount": 30,   "unit": "g",  "ingredient": "celery" },
-        { "amount": 600,  "unit": "ml", "ingredient": "chicken broth" },
-        { "amount": 100,  "unit": "ml", "ingredient": "vegetable broth" },
-        { "amount": 100,  "unit": "g",  "ingredient": "chicken breast" },
-        { "amount": 50,   "unit": "g",  "ingredient": "egg noodle" },
-        { "amount": 50,   "unit": "g",  "ingredient": "carrot" },
-        { "amount": 5,    "unit": "g",  "ingredient": "basil" },
-        { "amount": 5,    "unit": "g",  "ingredient": "oregano" }
-      ]
+        { "amount": 170,  "unit": "g",  "ingredient": "all-purpose flour" },
+        { "amount": 6,  "unit": "g",  "ingredient": "baking soda" },
+        { "amount": 1,  "unit": "g",  "ingredient": "salt" },
+        { "amount": 19,  "unit": "ml",  "ingredient": "milk" },
+        { "amount": 137,  "unit": "g", "ingredient": "packed brown sugar" },
+        { "amount": 144,  "unit": "g",  "ingredient": "softened butter" },
+        { "amount": 125,    "unit": "g",  "ingredient": "white sugar" },
+        { "amount": 6,    "unit": "ml",  "ingredient": "vanilla extract" },
+        { "amount": 1,  "unit": "",  "ingredient": "large eggs" },
+        { "amount": 281,  "unit": "g",  "ingredient": "white chocolate chips" },
+        { "amount": 64,  "unit": "g",  "ingredient": "unsweetened cocoa powder" }
+      ],
+      "baking time": 12,
+      "heat": 180
     },
     {
-      "name": "butternut squash soup",
+      "name": "simple shortbread cookies",
       "ingredients": [
-        { "amount": 800, "unit": "g",  "ingredient": "butternut squash"},
-        { "amount": 100,  "unit": "g",  "ingredient": "onion"},
-        { "amount": 50,   "unit": "g",  "ingredient": "carrot"},
-        { "amount": 15,   "unit": "g",  "ingredient": "garlic"},
-        { "amount": 10,   "unit": "g",  "ingredient": "thyme"},
-        { "amount": 5,    "unit": "g",  "ingredient": "sage"},
-        { "amount": 200,  "unit": "ml", "ingredient": "chicken broth"},
-        { "amount": 1,    "unit": "g",  "ingredient": "salt"},
-        { "amount": 1,    "unit": "g",  "ingredient": "pepper"},
-        { "amount": 1,    "unit": "g",  "ingredient": "cayenne"},
-        { "amount": 20,   "unit": "ml", "ingredient": "double cream"},
-        { "amount": 5,    "unit": "g",  "ingredient": "parsley"}
-      ]
+        { "amount": 544,  "unit": "g",  "ingredient": "all-purpose flour" },
+        { "amount": 454,  "unit": "g",  "ingredient": "softened butter" },
+        { "amount": 201,    "unit": "g",  "ingredient": "white sugar" },
+        { "amount": 10,    "unit": "ml",  "ingredient": "vanilla extract" }
+      ],
+      "baking time": 11,
+      "heat": 180
     },
     {
       "name": "split pea soup",
@@ -72,46 +76,117 @@
         { "amount": 30,   "unit": "g",  "ingredient": "bacon"},
         { "amount": 1,    "unit": "g",  "ingredient": "salt"},
         { "amount": 1,    "unit": "g",  "ingredient": "black pepper"}
-      ]
-    },
-    {
-      "name": "corn chowder",
-      "ingredients": [
-        { "amount": 200,  "unit": "g",  "ingredient": "baby potatoes"},
-        { "amount": 10,   "unit": "g",  "ingredient": "plain flour"},
-        { "amount": 500,  "unit": "ml", "ingredient": "chicken broth"},
-        { "amount": 200,  "unit": "g",  "ingredient": "sweetcorn"},
-        { "amount": 5,    "unit": "g",  "ingredient": "thyme"},
-        { "amount": 5,    "unit": "g",  "ingredient": "basil"},
-        { "amount": 5,    "unit": "g",  "ingredient": "onion powder"},
-        { "amount": 1,    "unit": "g",  "ingredient": "salt"},
-        { "amount": 1,    "unit": "g",  "ingredient": "black pepper"},
-        { "amount": 200,  "unit": "g",  "ingredient": "chicken"},
-        { "amount": 50,   "unit": "g",  "ingredient": "cheese"},
-        { "amount": 20,   "unit": "ml", "ingredient": "milk"},
-        { "amount": 10,   "unit": "ml", "ingredient": "double cream"},
-        { "amount": 10,   "unit": "g",  "ingredient": "bacon"},
-        { "amount": 20,   "unit": "g",  "ingredient": "chives"}
-      ]
-    },
-    {
-      "name": "mulligatawny soup",
-      "ingredients": [
-        { "amount": 50,   "unit": "g",  "ingredient": "onion" },
-        { "amount": 60,   "unit": "g",  "ingredient": "carrot" },
-        { "amount": 60,   "unit": "g",  "ingredient": "celery" },
-        { "amount": 30,   "unit": "g",  "ingredient": "butter" },
-        { "amount": 5,    "unit": "g",  "ingredient": "flour" },
-        { "amount": 5,    "unit": "g",  "ingredient": "curry powder" },
-        { "amount": 500,  "unit": "ml", "ingredient": "chicken broth" },
-        { "amount": 100,  "unit": "g",  "ingredient": "apple" },
-        { "amount": 20,   "unit": "g",  "ingredient": "rice" },
-        { "amount": 100,  "unit": "g",  "ingredient": "chicken breast" },
-        { "amount": 60,   "unit": "ml", "ingredient": "double cream" }
-      ]
-    }    
+      ],
+      "baking time": 0,
+      "heat": 0
+    }   
   ],
   "ingredients": [
-    { "name":"flour",   "category":"flour" }
+    {
+      "name": "all-purpose flour",
+      "category": "flour"
+    },
+    {
+      "name": "baking soda",
+      "category": "rising"
+    },
+    {
+      "name": "baking powder",
+      "category": "rising"
+    },
+    {
+      "name": "softened butter",
+      "category": "butter"
+    },
+    {
+      "name": "white sugar",
+      "category": "sugar"
+    },
+    {
+      "name": "vanilla extract",
+      "category": "flavour"
+    },
+    {
+      "name": "eggs",
+      "category": "eggs"
+    },
+    {
+      "name": "large eggs",
+      "category": "eggs"
+    },
+    {
+      "name": "salt",
+      "category": "salt"
+    },
+    {
+      "name": "ground cinnamon",
+      "category": "flavour"
+    },
+    {
+      "name": "packed brown sugar",
+      "category": "sugar"
+    },
+    {
+      "name": "quick cooking oats",
+      "category": "flour"
+    },
+    {
+      "name": "milk",
+      "category": "liquid"
+    },
+    {
+      "name": "white chocolate chips",
+      "category": "chocolate"
+    },
+    {
+      "name": "unsweetened cocoa powder",
+      "category": "chocolate"
+    },
+    {
+      "name": "split peas",
+      "category": "vegetable"
+    },
+    {
+      "name": "onion",
+      "category": "vegetable"
+    },
+    {
+      "name": "carrot",
+      "category": "vegetable"
+    },
+    {
+      "name": "celery",
+      "category": "vegetable"
+    },
+    {
+      "name": "garlic",
+      "category": "vegetable"
+    },
+    {
+      "name": "thyme",
+      "category": "herb"
+    },
+    {
+      "name": "ground ginger",
+      "category": "flavour"
+    },
+    {
+      "name": "chili flakes",
+      "category": "herb"
+    },
+    {
+      "name": "chicken broth",
+      "category": "liquid"
+    },
+    {
+      "name": "bacon",
+      "category": "meat"
+    },
+    {
+      "name": "black pepper",
+      "category": "herb"
+    }
   ]
+  
 }
+
