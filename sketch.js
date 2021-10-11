@@ -1,3 +1,7 @@
+// HENRI:
+// Heavenly Evolutionary New Recipe Intelligence
+
+
 let json = {};
 let recipes = [];
 let allIngredients = [];
