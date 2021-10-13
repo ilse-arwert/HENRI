@@ -27,7 +27,7 @@ function setup() {
   // REMOVE ME
   randomSeed(0);
 
-  createCanvas(8000, 8000);
+  createCanvas(400, 800);
   recipes = json.recipes;
   ingredientsList = json.ingredients;
   
