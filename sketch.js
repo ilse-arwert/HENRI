@@ -49,6 +49,27 @@ function setup() {
   frameRate(2);
 }
 
+function draw() {
+  update();
+  background(255);
+  history.push(population[0].fitness);
+  stroke(255, 0, 0);  
+  for (let i = 0; i < min(history.length, width); i++) {
+    line(width - i, height - history[history.length - 1 - i], width - i, height);
+  }
+  noStroke();
+  text("max. fitness = " + history[history.length - 1], width - 140, 40);
+  
+  let recipe_text = population[0].name + "\n";
+  for (let i of population[0].ingredients) {
+    recipe_text += "\n" + i.amount + i.unit + " " + i.ingredient;
+  }
+  text(recipe_text, 40, 40);
+
+  // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
+  // noLoop();
+}
+
 function evaluateRecipes(recipes) {
   for (const r of recipes) {
     
@@ -195,26 +216,6 @@ function update() {
   population = selectPopulation(population, R);
 }
 
-function draw() {
-  update();
-  background(255);
-  history.push(population[0].fitness);
-  stroke(255, 0, 0);  
-  for (let i = 0; i < min(history.length, width); i++) {
-    line(width - i, height - history[history.length - 1 - i], width - i, height);
-  }
-  noStroke();
-  text("max. fitness = " + history[history.length - 1], width - 140, 40);
-  
-  let recipe_text = population[0].name + "\n";
-  for (let i of population[0].ingredients) {
-    recipe_text += "\n" + i.amount + i.unit + " " + i.ingredient;
-  }
-  text(recipe_text, 40, 40);
-
-  // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
-  // noLoop();
-}
 
 function crossoverRecipes(r1, r2) {
   // choose crossover point in r1
