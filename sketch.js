@@ -4,28 +4,39 @@
 
 let json = {};
 let recipes = [];
-let allIngredients = [];
+let allIngredients = []; 
+let ingredientsList = []; // with categories, from json
 let population = [];
-let populationSize = 20;
+let populationSize = 20; // could be higher!
 
 let recipe_number = 0;
 let history = [];
+
+
+// fitness
+const maxCategoryBonus = 20; // half of this is the bonus for 2 items in same cat.
+const multipleCatDeduct = 8; // when there are multiples in more than 1 cat.
 
 function preload() {
   json = loadJSON("data/recipes.json");
 }
 
 function setup() {
+
+  // REMOVE ME
+  randomSeed(0);
+
   createCanvas(400, 800);
   recipes = json.recipes;
+  ingredientsList = json.ingredients;
   
   // extract all of the ingredients from the inspiring set
+  // TODO: Replace this with our JSON ingredient list?
   for (const r of recipes) {
     for (const i of r.ingredients) {
       allIngredients.push(i);
     }
   }
-  console.log(allIngredients);
 
   // create an initial population
   for (let i = 0; i < populationSize; i++) {
@@ -39,8 +50,105 @@ function setup() {
 
 function evaluateRecipes(recipes) {
   for (const r of recipes) {
-    // fitness is the number of ingredients
-    r.fitness = r.ingredients.length;
+    
+    r.fitness = 0;
+
+    // Points for ingredients in same category. 
+    // Slight deductions for multiple categories with multiple ingredients.
+    const categories = [];
+    for (const i of r.ingredients){
+      let ingredientListItem = ingredientsList.find(o => o.name === i.ingredient);
+      categories.push(ingredientListItem.category);  
+    }
+
+    const counts = {};
+    let multiples = false;
+
+    for (const cat of categories){
+      // if counts[cat] exists, add one, else set to one.
+      counts[cat] = counts[cat] ? counts[cat] + 1 : 1;
+    }
+    for (const key in counts){
+      if (counts[key] > 1){
+        // exclude 'essentials'
+        // TODO: replace with stored list of essentials
+        if (key != "flour" && 
+            key != "rising" && 
+            key != "butter" && 
+            key != "sugar" &&
+            key != "salt" &&
+            key != "liquid" &&
+            key != "eggs"){
+          
+          // not the first category to have multiples
+          r.fitness = multiples ? r.fitness - multipleCatDeduct : r.fitness;
+
+          r.fitness += maxCategoryBonus - (( maxCategoryBonus / 2) / ( 2 ** counts[key] ));
+          multiples = true;
+          
+        }
+      }
+      
+    }
+    // -----
+
+    // fitness for good ratios of essentials
+
+    // add weight of liquids, flours, rising, sugar, fats, salts
+    //weights:
+    let flourW = 0;
+    let liquidW = 0;
+    let risingW = 0;
+    let sugarW = 0;
+    let fatW = 0;
+    let saltW = 0;
+    for (const i of r.ingredients){
+      let ingredientListItem = ingredientsList.find(o => o.name === i.ingredient);
+
+      if (ingredientListItem.category == "flour"){
+        flourW += i.amount;
+      }
+      if (ingredientListItem.category == "liquid"){
+        liquidW += i.amount;
+      }
+      if (ingredientListItem.category == "rising"){
+        risingW += i.amount;
+      }
+      if (ingredientListItem.category == "sugar"){
+        sugarW += i.amount;
+      }
+      if (ingredientListItem.category == "fat"){
+        fatW += i.amount;
+      }
+      if (ingredientListItem.category == "salt"){
+        saltW += i.amount;
+      }
+    }
+
+    let totalWeight = flourW + liquidW + risingW + sugarW + fatW + saltW;
+    // normalize
+    flourW = flourW / totalWeight;
+    liquidW = liquidW / totalWeight;
+    risingW = risingW / totalWeight;
+    sugarW = sugarW / totalWeight;
+    fatW = fatW / totalWeight;
+    saltW = saltW /totalWeight;
+
+    // fitness -= difference * weighing
+    r.fitness -= Math.abs(flourW - 0.5) * 50;
+    r.fitness -= Math.abs(fatW - 0.33) * 50;
+    r.fitness -= Math.abs(sugarW - 0.16) * 50;
+    r.fitness -= Math.max(liquidW - 0.05, 0) * 100; // no deduction for low liquid
+    r.fitness -= Math.abs(risingW - 0.015) * 500;
+    r.fitness -= Math.abs(saltW - 0.015) * 400;
+
+    // -----
+
+    // goeie verhouding basis + extras is glijdende schaal
+
+    // bonuspunten voor aanwezigheid flavor & herbs
+
+
   }
 }
 
@@ -102,6 +210,9 @@ function draw() {
     recipe_text += "\n" + i.amount + i.unit + " " + i.ingredient;
   }
   text(recipe_text, 40, 40);
+
+  // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
+  // noLoop();
 }
 
 function crossoverRecipes(r1, r2) {
