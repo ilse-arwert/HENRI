@@ -11,6 +11,7 @@ let populationSize = 20; // could be higher!
 
 let recipe_number = 0;
 let history = [];
+let totalHistory = [];
 
 
 // fitness
@@ -26,7 +27,7 @@ function setup() {
   // REMOVE ME
   randomSeed(0);
 
-  createCanvas(400, 800);
+  createCanvas(8000, 8000);
   recipes = json.recipes;
   ingredientsList = json.ingredients;
   
@@ -65,6 +66,11 @@ function draw() {
     recipe_text += "\n" + i.amount + i.unit + " " + i.ingredient;
   }
   text(recipe_text, 40, 40);
+  
+  if (frameCount == 20)
+    saveJSON(totalHistory);
+  
+  
 
   // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
   // noLoop();
@@ -236,6 +242,7 @@ function selectPopulation(P, R) {
 function update() {
   let R = generateRecipes(populationSize, population);
   population = selectPopulation(population, R);
+  totalHistory = totalHistory.concat(population);
 }
 
 
