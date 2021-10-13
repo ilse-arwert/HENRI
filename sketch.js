@@ -18,7 +18,7 @@ const maxCategoryBonus = 20; // half of this is the bonus for 2 items in same ca
 const multipleCatDeduct = 8; // when there are multiples in more than 1 cat.
 
 function preload() {
-  json = loadJSON("data/recipes.json");
+  json = loadJSON("data/recipes-no-soup.json");
 }
 
 function setup() {
@@ -42,6 +42,7 @@ function setup() {
   for (let i = 0; i < populationSize; i++) {
     population.push(random(recipes));
   }
+
   evaluateRecipes(population);
   population.sort((a, b) => b.fitness - a.fitness);
   
