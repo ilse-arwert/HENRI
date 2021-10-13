@@ -18,7 +18,7 @@ const maxCategoryBonus = 20; // half of this is the bonus for 2 items in same ca
 const multipleCatDeduct = 8; // when there are multiples in more than 1 cat.
 
 function preload() {
-  json = loadJSON("data/recipes-no-soup.json");
+  json = loadJSON("data/recipes.json");
 }
 
 function setup() {
@@ -110,7 +110,6 @@ function evaluateRecipes(recipes) {
           
         }
       }
-      
     }
     // -----
 
@@ -124,37 +123,43 @@ function evaluateRecipes(recipes) {
     let sugarW = 0;
     let fatW = 0;
     let saltW = 0;
+    let nonEssentialWeight = 0;
+
     for (const i of r.ingredients){
       let ingredientListItem = ingredientsList.find(o => o.name === i.ingredient);
 
       if (ingredientListItem.category == "flour"){
         flourW += i.amount;
       }
-      if (ingredientListItem.category == "liquid"){
+      else if (ingredientListItem.category == "liquid"){
         liquidW += i.amount;
       }
-      if (ingredientListItem.category == "rising"){
+      else if (ingredientListItem.category == "rising"){
         risingW += i.amount;
       }
-      if (ingredientListItem.category == "sugar"){
+      else if (ingredientListItem.category == "sugar"){
         sugarW += i.amount;
       }
-      if (ingredientListItem.category == "fat"){
+      else if (ingredientListItem.category == "fat"){
         fatW += i.amount;
       }
-      if (ingredientListItem.category == "salt"){
+      else if (ingredientListItem.category == "salt"){
         saltW += i.amount;
       }
+      else{
+        nonEssentialWeight += i.amount;
+      }
+      
     }
 
-    let totalWeight = flourW + liquidW + risingW + sugarW + fatW + saltW;
+    let essentialWeight = flourW + liquidW + risingW + sugarW + fatW + saltW;
     // normalize
-    flourW = flourW / totalWeight;
-    liquidW = liquidW / totalWeight;
-    risingW = risingW / totalWeight;
-    sugarW = sugarW / totalWeight;
-    fatW = fatW / totalWeight;
-    saltW = saltW /totalWeight;
+    flourW = flourW / essentialWeight;
+    liquidW = liquidW / essentialWeight;
+    risingW = risingW / essentialWeight;
+    sugarW = sugarW / essentialWeight;
+    fatW = fatW / essentialWeight;
+    saltW = saltW /essentialWeight;
 
     // fitness -= difference * weighing
     r.fitness -= Math.abs(flourW - 0.5) * 50;
@@ -166,10 +171,27 @@ function evaluateRecipes(recipes) {
 
     // -----
 
-    // goeie verhouding basis + extras is glijdende schaal
+    // deduct points if too many non-essentials
+    if (nonEssentialWeight > essentialWeight / 2.50){
+      r.fitness -= (nonEssentialWeight / essentialWeight) * 50;
+    }
 
-    // bonuspunten voor aanwezigheid flavor & herbs
+    // bonus points for flavor & herbs
 
+    for (const i of r.ingredients){
+      let ingredientListItem = ingredientsList.find(o => o.name === i.ingredient);
+
+      if (ingredientListItem.category == "flavour"){
+        r.fitness += 2;
+      }
+      if (ingredientListItem.category == "herb"){
+        r.fitness += 1;
+      }
+    }
+
+    // deduction for many ingredients
+
+    r.fitness -= r.ingredients.length ;
 
   }
 }
