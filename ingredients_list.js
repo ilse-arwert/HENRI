@@ -4,7 +4,7 @@ let allIngredients = [];
 
 
 function preload() {
-  json = loadJSON("data/recipes.json");
+  json = loadJSON("data/recipes-no-soup.json");
 }
 
 function setup() {

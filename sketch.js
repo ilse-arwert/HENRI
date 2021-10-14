@@ -19,7 +19,7 @@ const maxCategoryBonus = 20; // half of this is the bonus for 2 items in same ca
 const multipleCatDeduct = 8; // when there are multiples in more than 1 cat.
 
 function preload() {
-  json = loadJSON("data/recipes.json");
+  json = loadJSON("data/recipes-no-soup.json");
 }
 
 function setup() {
@@ -68,7 +68,7 @@ function draw() {
   text(recipe_text, 40, 40);
   
   if (frameCount == 20)
-    saveJSON(totalHistory);
+    // saveJSON(totalHistory);
   
   
 
