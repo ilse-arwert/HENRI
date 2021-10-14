@@ -50,7 +50,7 @@ function setup() {
   frameRate(2);
 }
 
-function draw() {
+function draw(){
   update();
   background(255);
   history.push(population[0].fitness);
@@ -67,7 +67,7 @@ function draw() {
   }
   text(recipe_text, 40, 40);
   
-  if (frameCount == 20)
+  // if (frameCount == 20)
     // saveJSON(totalHistory);
   
   // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
