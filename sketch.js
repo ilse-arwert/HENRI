@@ -70,8 +70,6 @@ function draw() {
   if (frameCount == 20)
     // saveJSON(totalHistory);
   
-  
-
   // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
   // noLoop();
 }
@@ -242,7 +240,9 @@ function selectPopulation(P, R) {
 function update() {
   let R = generateRecipes(populationSize, population);
   population = selectPopulation(population, R);
-  totalHistory = totalHistory.concat(population);
+  population.forEach(recipe => {
+    if (!totalHistory.includes(recipe)) totalHistory.push(recipe);
+  });
 }
 
 
