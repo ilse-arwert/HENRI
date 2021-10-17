@@ -1,801 +1,1106 @@
 {
   "_comment": "recipes are normalized to 24 cookie yields",
-  "recipes": [{
-      "name": "easy sugar cookies",
-      "ingredients": [{
-          "amount": 187,
-          "unit": "g",
-          "ingredient": "all-purpose flour"
-        },
-        {
-          "amount": 2,
-          "unit": "g",
-          "ingredient": "baking soda"
-        },
-        {
-          "amount": 1,
-          "unit": "g",
-          "ingredient": "baking powder"
-        },
-        {
-          "amount": 113,
-          "unit": "g",
-          "ingredient": "softened butter"
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "ingredient": "white sugar"
-        },
-        {
-          "amount": 5,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "eggs"
-        }
+  "recipes": [
+    {
+      "name": "Easy sugar cookies",
+      "ingredients": [
+         {
+            "amount": 187,
+            "unit": "g",
+            "ingredient": "all-purpose flour"
+         },
+         {
+            "amount": 2,
+            "unit": "g",
+            "ingredient": "baking soda"
+         },
+         {
+            "amount": 1,
+            "unit": "g",
+            "ingredient": "baking powder"
+         },
+         {
+            "amount": 113,
+            "unit": "g",
+            "ingredient": "softened butter"
+         },
+         {
+            "amount": 150,
+            "unit": "g",
+            "ingredient": "white sugar"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "egg"
+         }
       ],
       "baking time": 9,
       "heat": 190
-    },
+   },
     {
-      "name": "soft oatmeal cookies",
-      "ingredients": [{
-          "amount": 272,
-          "unit": "g",
-          "ingredient": "all-purpose flour"
-        },
-        {
-          "amount": 5,
-          "unit": "g",
-          "ingredient": "baking soda"
-        },
-        {
-          "amount": 5,
-          "unit": "g",
-          "ingredient": "salt"
-        },
-        {
-          "amount": 7,
-          "unit": "g",
-          "ingredient": "ground cinnamon"
-        },
-        {
-          "amount": 220,
-          "unit": "g",
-          "ingredient": "packed brown sugar"
-        },
-        {
-          "amount": 227,
-          "unit": "g",
-          "ingredient": "softened butter"
-        },
-        {
-          "amount": 201,
-          "unit": "g",
-          "ingredient": "white sugar"
-        },
-        {
-          "amount": 5,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 120,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 255,
-          "unit": "g",
-          "ingredient": "quick cooking oats"
-        }
+      "name": "Soft oatmeal cookies",
+      "ingredients": [
+         {
+            "amount": 272,
+            "unit": "g",
+            "ingredient": "all-purpose flour"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "baking soda"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "salt"
+         },
+         {
+            "amount": 7,
+            "unit": "g",
+            "ingredient": "ground cinnamon"
+         },
+         {
+            "amount": 220,
+            "unit": "g",
+            "ingredient": "packed brown sugar"
+         },
+         {
+            "amount": 227,
+            "unit": "g",
+            "ingredient": "softened butter"
+         },
+         {
+            "amount": 201,
+            "unit": "g",
+            "ingredient": "white sugar"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 120,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 255,
+            "unit": "g",
+            "ingredient": "quick cooking oats"
+         }
       ],
       "baking time": 9,
       "heat": 190
-    },
+   },
     {
-      "name": "inside-out chocolate-chip cookies",
-      "ingredients": [{
-          "amount": 170,
-          "unit": "g",
-          "ingredient": "all-purpose flour"
-        },
-        {
-          "amount": 6,
-          "unit": "g",
-          "ingredient": "baking soda"
-        },
-        {
-          "amount": 1,
-          "unit": "g",
-          "ingredient": "salt"
-        },
-        {
-          "amount": 19,
-          "unit": "g",
-          "ingredient": "milk"
-        },
-        {
-          "amount": 137,
-          "unit": "g",
-          "ingredient": "packed brown sugar"
-        },
-        {
-          "amount": 144,
-          "unit": "g",
-          "ingredient": "softened butter"
-        },
-        {
-          "amount": 125,
-          "unit": "g",
-          "ingredient": "white sugar"
-        },
-        {
-          "amount": 6,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 70,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 281,
-          "unit": "g",
-          "ingredient": "white chocolate chips"
-        },
-        {
-          "amount": 64,
-          "unit": "g",
-          "ingredient": "unsweetened cocoa powder"
-        }
+      "name": "Inside-out chocolate-chip cookies",
+      "ingredients": [
+         {
+            "amount": 170,
+            "unit": "g",
+            "ingredient": "all-purpose flour"
+         },
+         {
+            "amount": 6,
+            "unit": "g",
+            "ingredient": "baking soda"
+         },
+         {
+            "amount": 1,
+            "unit": "g",
+            "ingredient": "salt"
+         },
+         {
+            "amount": 19,
+            "unit": "g",
+            "ingredient": "milk"
+         },
+         {
+            "amount": 137,
+            "unit": "g",
+            "ingredient": "packed brown sugar"
+         },
+         {
+            "amount": 144,
+            "unit": "g",
+            "ingredient": "softened butter"
+         },
+         {
+            "amount": 125,
+            "unit": "g",
+            "ingredient": "white sugar"
+         },
+         {
+            "amount": 6,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 70,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 281,
+            "unit": "g",
+            "ingredient": "white chocolate chips"
+         },
+         {
+            "amount": 64,
+            "unit": "g",
+            "ingredient": "unsweetened cocoa powder"
+         }
       ],
       "baking time": 12,
       "heat": 180
-    },
+   },
     {
-      "name": "simple shortbread cookies",
-      "ingredients": [{
-          "amount": 544,
-          "unit": "g",
-          "ingredient": "all-purpose flour"
-        },
-        {
-          "amount": 454,
-          "unit": "g",
-          "ingredient": "softened butter"
-        },
-        {
-          "amount": 201,
-          "unit": "g",
-          "ingredient": "white sugar"
-        },
-        {
-          "amount": 10,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        }
+      "name": "Simple shortbread cookies",
+      "ingredients": [
+         {
+            "amount": 544,
+            "unit": "g",
+            "ingredient": "all-purpose flour"
+         },
+         {
+            "amount": 454,
+            "unit": "g",
+            "ingredient": "softened butter"
+         },
+         {
+            "amount": 201,
+            "unit": "g",
+            "ingredient": "white sugar"
+         },
+         {
+            "amount": 10,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         }
       ],
       "baking time": 11,
       "heat": 180
-    },
+   },
     {
       "name": "Fruity flapjack cookies",
-      "ingredients": [{
-          "amount": 125,
-          "unit": "g",
-          "ingredient": "jumbo oats"
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "ingredient": "softened butter"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "light muscovado sugar"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 20,
-          "unit": "g",
-          "ingredient": "golden syrup"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "self-raising flour"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "mixed dried fruit or raisins"
-        },
-        {
-          "amount": 75,
-          "unit": "g",
-          "ingredient": "dried apricots, finely chopped"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "desiccated coconut"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "ground cinnamon (optional)"
-        }
+      "ingredients": [
+         {
+            "amount": 125,
+            "unit": "g",
+            "ingredient": "jumbo oats"
+         },
+         {
+            "amount": 150,
+            "unit": "g",
+            "ingredient": "softened butter"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "light muscovado sugar"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 20,
+            "unit": "g",
+            "ingredient": "golden syrup"
+         },
+         {
+            "amount": 3,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "self-raising flour"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "mixed dried fruit or raisins"
+         },
+         {
+            "amount": 75,
+            "unit": "g",
+            "ingredient": "dried apricots, finely chopped"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "desiccated coconut"
+         },
+         {
+            "amount": 3,
+            "unit": "g",
+            "ingredient": "ground cinnamon (optional)"
+         }
       ],
       "baking time": 15,
       "heat": 180
-    },
+   },
     {
       "name": "Bumper oat cookies",
-      "ingredients": [{
-          "amount": 175,
-          "unit": "g",
-          "ingredient": "butter"
-        },
-        {
-          "amount": 175,
-          "unit": "g",
-          "ingredient": "demerara sugar"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "golden syrup"
-        },
-        {
-          "amount": 85,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "bicarbonate of soda"
-        },
-        {
-          "amount": 250,
-          "unit": "g",
-          "ingredient": "porridge oats"
-        },
-        {
-          "amount": 6,
-          "unit": "g",
-          "ingredient": "ground cinnamon"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "ready-to-eat dried apricots, chopped"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "stem ginger , chopped"
-        },
-        {
-          "amount": 75,
-          "unit": "g",
-          "ingredient": "dried sour cherries"
-        },
-        {
-          "amount": 15,
-          "unit": "g",
-          "ingredient": "boiling water"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "eggs, beaten"
-        }
+      "ingredients": [
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "butter"
+         },
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "demerara sugar"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "golden syrup"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 3,
+            "unit": "g",
+            "ingredient": "bicarbonate of soda"
+         },
+         {
+            "amount": 250,
+            "unit": "g",
+            "ingredient": "porridge oats"
+         },
+         {
+            "amount": 6,
+            "unit": "g",
+            "ingredient": "ground cinnamon"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "ready-to-eat dried apricots, chopped"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "stem ginger , chopped"
+         },
+         {
+            "amount": 75,
+            "unit": "g",
+            "ingredient": "dried sour cherries"
+         },
+         {
+            "amount": 15,
+            "unit": "g",
+            "ingredient": "boiling water"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "egg, beaten"
+         }
       ],
       "baking time": 16,
       "heat": 180
-    },
+   },
     {
       "name": "Gooey chocolate cherry cookies",
-      "ingredients": [{
-          "amount": 200,
-          "unit": "g",
-          "ingredient": "unsalted butter , at room temperature"
-        },
-        {
-          "amount": 85,
-          "unit": "g",
-          "ingredient": "light muscovado sugar"
-        },
-        {
-          "amount": 85,
-          "unit": "g",
-          "ingredient": "golden caster sugar"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 255,
-          "unit": "g",
-          "ingredient": "self-raising flour"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "plain chocolate, 50-70% cocoa, roughly chopped"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "white chocolate, roughly chopped"
-        },
-        {
-          "amount": 85,
-          "unit": "g",
-          "ingredient": "natural colour glacé cherry , roughly chopped"
-        }
+      "ingredients": [
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "unsalted butter, at room temperature"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "light muscovado sugar"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "golden caster sugar"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 255,
+            "unit": "g",
+            "ingredient": "self-raising flour"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "plain chocolate, 50-70% cocoa, roughly chopped"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "white chocolate, roughly chopped"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "natural colour glacÃ© cherry , roughly chopped"
+         }
       ],
       "baking time": 16,
       "heat": 180
-    },
+   },
     {
       "name": "Rainbow cookies",
-      "ingredients": [{
-          "amount": 175,
-          "unit": "g",
-          "ingredient": "softened butter"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "golden caster sugar"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "icing sugar"
-        },
-        {
-          "amount": 40,
-          "unit": "g",
-          "ingredient": "egg yolks"
-        },
-        {
-          "amount": 12,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 300,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 131,
-          "unit": "g",
-          "ingredient": "zest and juice of an orange"
-        },
-        {
-          "amount": 140,
-          "unit": "g",
-          "ingredient": "icing sugar, sifted"
-        },
-        {
-          "amount": 30,
-          "unit": "g",
-          "ingredient": "sprinkles, to decorate"
-        }
+      "ingredients": [
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "softened butter"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "golden caster sugar"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "icing sugar"
+         },
+         {
+            "amount": 40,
+            "unit": "g",
+            "ingredient": "egg yolks"
+         },
+         {
+            "amount": 12,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 300,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 131,
+            "unit": "g",
+            "ingredient": "zest and juice of an orange"
+         },
+         {
+            "amount": 140,
+            "unit": "g",
+            "ingredient": "icing sugar, sifted"
+         },
+         {
+            "amount": 30,
+            "unit": "g",
+            "ingredient": "sprinkles, to decorate"
+         }
       ],
       "baking time": 15,
       "heat": 200
-    },
+   },
     {
       "name": "Sugar-dusted wedding cookies",
-      "ingredients": [{
-          "amount": 125,
-          "unit": "g",
-          "ingredient": "salted butter , softened"
-        },
-        {
-          "amount": 70,
-          "unit": "g",
-          "ingredient": "caster sugar"
-        },
-        {
-          "amount": 1,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 20,
-          "unit": "g",
-          "ingredient": "egg yolks"
-        },
-        {
-          "amount": 6,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "ground rice"
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 70,
-          "unit": "g",
-          "ingredient": "preserving sugar (or demerara sugar)"
-        }
+      "ingredients": [
+         {
+            "amount": 125,
+            "unit": "g",
+            "ingredient": "salted butter , softened"
+         },
+         {
+            "amount": 70,
+            "unit": "g",
+            "ingredient": "caster sugar"
+         },
+         {
+            "amount": 1,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 20,
+            "unit": "g",
+            "ingredient": "egg yolks"
+         },
+         {
+            "amount": 6,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "ground rice"
+         },
+         {
+            "amount": 150,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 70,
+            "unit": "g",
+            "ingredient": "preserving sugar (or demerara sugar)"
+         }
       ],
       "baking time": 10,
       "heat": 200
-    },
-    {
-      "name": "Sugar-dusted wedding cookies",
-      "ingredients": [{
-          "amount": 112,
-          "unit": "g",
-          "ingredient": "unsalted butter , softened"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "caster sugar"
-        },
-        {
-          "amount": 88,
-          "unit": "g",
-          "ingredient": "dark muscovado sugar"
-        },
-        {
-          "amount": 6,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "egg, beaten"
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 25,
-          "unit": "g",
-          "ingredient": "cocoa powder"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "baking powder"
-        },
-        {
-          "amount": 4,
-          "unit": "g",
-          "ingredient": "cayenne pepper (less or more to taste)"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "dark chilli chocolate, roughly chopped"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "white chocolate, roughly chopped"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "dark chocolate, roughly chopped"
-        }
-      ],
-      "baking time": 11,
-      "heat": 180
-    },
+   },
     {
       "name": "Chilli chocolate cookies",
-      "ingredients": [{
-          "amount": 112,
-          "unit": "g",
-          "ingredient": "unsalted butter , softened"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "caster sugar"
-        },
-        {
-          "amount": 88,
-          "unit": "g",
-          "ingredient": "dark muscovado sugar"
-        },
-        {
-          "amount": 6,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "egg, beaten"
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 25,
-          "unit": "g",
-          "ingredient": "cocoa powder"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "baking powder"
-        },
-        {
-          "amount": 4,
-          "unit": "g",
-          "ingredient": "cayenne pepper (less or more to taste)"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "dark chilli chocolate, roughly chopped"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "white chocolate, roughly chopped"
-        },
-        {
-          "amount": 50,
-          "unit": "g",
-          "ingredient": "dark chocolate, roughly chopped"
-        }
+      "ingredients": [
+         {
+            "amount": 112,
+            "unit": "g",
+            "ingredient": "unsalted butter, softened"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "caster sugar"
+         },
+         {
+            "amount": 88,
+            "unit": "g",
+            "ingredient": "dark muscovado sugar"
+         },
+         {
+            "amount": 6,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "egg, beaten"
+         },
+         {
+            "amount": 150,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 25,
+            "unit": "g",
+            "ingredient": "cocoa powder"
+         },
+         {
+            "amount": 3,
+            "unit": "g",
+            "ingredient": "baking powder"
+         },
+         {
+            "amount": 4,
+            "unit": "g",
+            "ingredient": "cayenne pepper (less or more to taste)"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "dark chilli chocolate, roughly chopped"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "white chocolate, roughly chopped"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "dark chocolate, roughly chopped"
+         }
       ],
       "baking time": 11,
       "heat": 180
-    },
+   },
     {
       "name": "Double ginger cookies",
-      "ingredients": [{
-          "amount": 350,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 15,
-          "unit": "g",
-          "ingredient": "ground ginger"
-        },
-        {
-          "amount": 6,
-          "unit": "g",
-          "ingredient": "bicarbonate of soda"
-        },
-        {
-          "amount": 175,
-          "unit": "g",
-          "ingredient": "light muscovado sugar"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "butter, chopped"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "stem ginger , chopped (not too finely), plus thin slices, to decorate (optional)"
-        },
-        {
-          "amount": 70,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "golden syrup"
-        },
-        {
-          "amount": 200,
-          "unit": "g",
-          "ingredient": "dark chocolate, chopped"
-        }
+      "ingredients": [
+         {
+            "amount": 350,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 15,
+            "unit": "g",
+            "ingredient": "ground ginger"
+         },
+         {
+            "amount": 6,
+            "unit": "g",
+            "ingredient": "bicarbonate of soda"
+         },
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "light muscovado sugar"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "butter, chopped"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "stem ginger , chopped (not too finely), plus thin slices, to decorate (optional)"
+         },
+         {
+            "amount": 70,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "golden syrup"
+         },
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "dark chocolate, chopped"
+         }
       ],
       "baking time": 12,
       "heat": 180
-    },
+   },
     {
       "name": "Gingerbread cookies",
-      "ingredients": [{
-          "amount": 120,
-          "unit": "g",
-          "ingredient": "unsalted butter, softened"
-        },
-        {
-          "amount": 15,
-          "unit": "g",
-          "ingredient": "black treacle"
-        },
-        {
-          "amount": 170,
-          "unit": "g",
-          "ingredient": "light brown sugar"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "fine sea salt"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 200,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 1.5,
-          "unit": "g",
-          "ingredient": "bicarbonate of soda"
-        },
-        {
-          "amount": 1.5,
-          "unit": "g",
-          "ingredient": "ground cloves"
-        },
-        {
-          "amount": 9,
-          "unit": "g",
-          "ingredient": "ground ginger"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "ground cinnamon"
-        },
-        {
-          "amount": 60,
-          "unit": "g",
-          "ingredient": "golden caster sugar"
-        }
+      "ingredients": [
+         {
+            "amount": 120,
+            "unit": "g",
+            "ingredient": "unsalted butter, softened"
+         },
+         {
+            "amount": 15,
+            "unit": "g",
+            "ingredient": "black treacle"
+         },
+         {
+            "amount": 170,
+            "unit": "g",
+            "ingredient": "light brown sugar"
+         },
+         {
+            "amount": 3,
+            "unit": "g",
+            "ingredient": "fine sea salt"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 1.5,
+            "unit": "g",
+            "ingredient": "bicarbonate of soda"
+         },
+         {
+            "amount": 1.5,
+            "unit": "g",
+            "ingredient": "ground cloves"
+         },
+         {
+            "amount": 9,
+            "unit": "g",
+            "ingredient": "ground ginger"
+         },
+         {
+            "amount": 3,
+            "unit": "g",
+            "ingredient": "ground cinnamon"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "golden caster sugar"
+         }
       ],
       "baking time": 10,
       "heat": 200
-    },
+   },
     {
       "name": "Double-dipped shortbread cookies",
-      "ingredients": [{
-          "amount": 300,
-          "unit": "g",
-          "ingredient": "salted butter, softened"
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "ingredient": "icing sugar"
-        },
-        {
-          "amount": 9,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 375,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 23,
-          "unit": "g",
-          "ingredient": "milk"
-        },
-        {
-          "amount": 75,
-          "unit": "g",
-          "ingredient": "milk chocolate, chopped"
-        },
-        {
-          "amount": 75,
-          "unit": "g",
-          "ingredient": "white chocolate, chopped"
-        }
+      "ingredients": [
+         {
+            "amount": 300,
+            "unit": "g",
+            "ingredient": "salted butter, softened"
+         },
+         {
+            "amount": 150,
+            "unit": "g",
+            "ingredient": "icing sugar"
+         },
+         {
+            "amount": 9,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 375,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 23,
+            "unit": "g",
+            "ingredient": "milk"
+         },
+         {
+            "amount": 75,
+            "unit": "g",
+            "ingredient": "milk chocolate, chopped"
+         },
+         {
+            "amount": 75,
+            "unit": "g",
+            "ingredient": "white chocolate, chopped"
+         }
       ],
       "baking time": 15,
       "heat": 180
-    },
+   },
     {
       "name": "Red velvet cookies",
-      "ingredients": [{
-          "amount": 175,
-          "unit": "g",
-          "ingredient": "salted butter, softened"
-        },
-        {
-          "amount": 200,
-          "unit": "g",
-          "ingredient": "light brown soft sugar"
-        },
-        {
-          "amount": 100,
-          "unit": "g",
-          "ingredient": "caster sugar"
-        },
-        {
-          "amount": 70,
-          "unit": "g",
-          "ingredient": "eggs"
-        },
-        {
-          "amount": 15,
-          "unit": "g",
-          "ingredient": "vanilla extract"
-        },
-        {
-          "amount": 15,
-          "unit": "g",
-          "ingredient": "red food colouring gel"
-        },
-        {
-          "amount": 225,
-          "unit": "g",
-          "ingredient": "plain flour"
-        },
-        {
-          "amount": 25,
-          "unit": "g",
-          "ingredient": "cocoa powder"
-        },
-        {
-          "amount": 3,
-          "unit": "g",
-          "ingredient": "bicarbonate of soda"
-        },
-        {
-          "amount": 150,
-          "unit": "g",
-          "ingredient": "white chocolate chips or chunks"
-        }
+      "ingredients": [
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "salted butter, softened"
+         },
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "light brown soft sugar"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "caster sugar"
+         },
+         {
+            "amount": 70,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 15,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 15,
+            "unit": "g",
+            "ingredient": "red food colouring gel"
+         },
+         {
+            "amount": 225,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 25,
+            "unit": "g",
+            "ingredient": "cocoa powder"
+         },
+         {
+            "amount": 3,
+            "unit": "g",
+            "ingredient": "bicarbonate of soda"
+         },
+         {
+            "amount": 150,
+            "unit": "g",
+            "ingredient": "white chocolate chips"
+         }
       ],
       "baking time": 14,
       "heat": 190
-    }
-  ],
+   },
+    {
+      "name": "Anzac biscuits",
+      "ingredients": [
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "porridge oats"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "desiccated coconut"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "caster sugar"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "butter"
+         },
+         {
+            "amount": 15,
+            "unit": "g",
+            "ingredient": "golden syrup"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "bicarbonate of soda"
+         }
+      ],
+      "baking time": 9,
+      "heat": 180
+   },
+    {
+      "name": "Sugar-dusted vanilla shortbread",
+      "ingredients": [
+         {
+            "amount": 222,
+            "unit": "g",
+            "ingredient": "plain flour"
+         },
+         {
+            "amount": 137,
+            "unit": "g",
+            "ingredient": "salted butter"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "golden caster sugar"
+         },
+         {
+            "amount": 10,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 20,
+            "unit": "g",
+            "ingredient": "egg yolk"
+         }
+      ],
+      "baking time": 20,
+      "heat": 180
+   },
+    {
+      "name": "Mango crunch cookies",
+      "ingredients": [
+         {
+            "amount": 140,
+            "unit": "g",
+            "ingredient": "unsalted butter, softened"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "golden caster sugar"
+         },
+         {
+            "amount": 20,
+            "unit": "g",
+            "ingredient": "egg yolk"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         },
+         {
+            "amount": 15,
+            "unit": "g",
+            "ingredient": "maple syrup"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "dried mango"
+         },
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "plain flour"
+         }
+      ],
+      "baking time": 13,
+      "heat": 180
+   },
+    {
+      "name": "Black tahini chocolate cookies",
+      "ingredients": [
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "salted butter, softened"
+         },
+         {
+            "amount": 125,
+            "unit": "g",
+            "ingredient": "light brown soft sugar"
+         },
+         {
+            "amount": 125,
+            "unit": "b",
+            "ingredient": "golden caster sugar"
+         },
+         {
+            "amount": 70,
+            "unit": "g",
+            "ingredient": "egg"
+         },
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "self-raising flour"
+         },
+         {
+            "amount": 30,
+            "unit": "g",
+            "ingredient": "cocoa powder"
+         },
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "milk chocolate, chopped"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "white chocolate, chopped"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "black sesame seeds"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "flavourless oil"
+         },
+         {
+            "amount": 30,
+            "unit": "g",
+            "ingredient": "maple syrup"
+         }
+      ],
+      "baking time": 8,
+      "heat": 180
+   },
+    {
+      "name": "Butterscotch cookies",
+      "ingredients": [
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "unsalted butter, softened"
+         },
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "light brown soft sugar"
+         },
+         {
+            "amount": 60,
+            "unit": "g",
+            "ingredient": "golden syrup"
+         },
+         {
+            "amount": 350,
+            "unit": "g",
+            "ingredient": "self-raising flour"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "puffed rice cereal"
+         },
+         {
+            "amount": 10,
+            "unit": "g",
+            "ingredient": "dark chocolate chips"
+         }
+      ],
+      "baking time": 18,
+      "heat": 160
+   },
+    {
+      "name": "Fruity cookies",
+      "ingredients": [
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "butter"
+         },
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "soft brown sugar"
+         },
+         {
+            "amount": 30,
+            "unit": "g",
+            "ingredient": "marmalade"
+         },
+         {
+            "amount": 10,
+            "unit": "g",
+            "ingredient": "ground mixed spice"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "ground cinnamon"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "ground ginger"
+         },
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "porridge oats"
+         },
+         {
+            "amount": 200,
+            "unit": "g",
+            "ingredient": "self-raising flour"
+         },
+         {
+            "amount": 10,
+            "unit": "g",
+            "ingredient": "baking powder"
+         },
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "dried fruit"
+         },
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "nuts"
+         }
+      ],
+      "baking time": 25,
+      "heat": 160
+   },
+    {
+      "name": "Toffee apple cookies",
+      "ingredients": [
+         {
+            "amount": 175,
+            "unit": "g",
+            "ingredient": "unsalted butter, softened"
+         },
+         {
+            "amount": 140,
+            "unit": "g",
+            "ingredient": "golden caster sugar"
+         },
+         {
+            "amount": 40,
+            "unit": "g",
+            "ingredient": "egg yolk"
+         },
+         {
+            "amount": 50,
+            "unit": "g",
+            "ingredient": "ground almond"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "chewy toffees"
+         },
+         {
+            "amount": 85,
+            "unit": "g",
+            "ingredient": "dried apple chunks"
+         },
+         {
+            "amount": 225,
+            "unit": "g",
+            "ingredient": "self-raising flour"
+         },
+         {
+            "amount": 30,
+            "unit": "g",
+            "ingredient": "milk"
+         }
+      ],
+      "baking time": 10,
+      "heat": 170
+   },
+    {
+      "name": "Forgotten cookies",
+      "ingredients": [
+         {
+            "amount": 100,
+            "unit": "g",
+            "ingredient": "egg white"
+         },
+         {
+            "amount": 120,
+            "unit": "g",
+            "ingredient": "golden caster sugar"
+         },
+         {
+            "amount": 120,
+            "unit": "g",
+            "ingredient": "pecan"
+         },
+         {
+            "amount": 150,
+            "unit": "g",
+            "ingredient": "dark chocolate, chopped"
+         },
+         {
+            "amount": 5,
+            "unit": "g",
+            "ingredient": "vanilla extract"
+         }
+      ],
+      "baking time": 11,
+      "heat": 180
+   }
+   ],
   "ingredients": [{
       "name": "all-purpose flour",
       "category": "flour"
@@ -929,7 +1234,7 @@
       "category": "eggs"
     },
     {
-      "name": "unsalted butter , at room temperature",
+      "name": "unsalted butter, at room temperature",
       "category": "fat"
     },
     {
@@ -983,10 +1288,6 @@
     {
       "name": "preserving sugar (or demerara sugar)",
       "category": "sugar"
-    },
-    {
-      "name": "unsalted butter , softened",
-      "category": "fat"
     },
     {
       "name": "dark muscovado sugar",
@@ -1069,8 +1370,76 @@
       "category": "flavour"
     },
     {
-      "name": "white chocolate chips or chunks",
+      "name": "salted butter",
+      "category": "fat"
+    },
+    {
+      "name": "egg yolk",
+      "category": "eggs"
+    },
+    {
+      "name": "maple syrup",
+      "category": "sugar"
+    },
+    {
+      "name": "dried mango",
+      "category": "fruit"
+    },
+    {
+      "name": "black sesame seeds",
+      "category": "flavour"
+    },
+    {
+      "name": "flavourless oil",
+      "category": "fat"
+    },
+    {
+      "name": "puffed rice cereal",
+      "category": "flour"
+    },
+    {
+      "name": "dark chocolate chips",
       "category": "chocolate"
+    },
+    {
+      "name": "soft brown sugar",
+      "category": "sugar"
+    },
+    {
+      "name": "marmalade",
+      "category": "fruit"
+    },
+    {
+      "name": "ground mixed spice",
+      "category": "flavour"
+    },
+    {
+      "name": "dried fruit",
+      "category": "fruit"
+    },
+    {
+      "name": "nuts",
+      "category": "fruit"
+    },
+    {
+      "name": "ground almond",
+      "category": "fruit"
+    },
+    {
+      "name": "chewy toffees",
+      "category": "sugar"
+    },
+    {
+      "name": "dried apple chunks",
+      "category": "fruit"
+    },
+    {
+      "name": "egg white",
+      "category": "eggs"
+    },
+    {
+      "name": "pecan",
+      "category": "fruit"
     }
   ]
 
