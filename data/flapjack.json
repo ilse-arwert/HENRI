@@ -1,0 +1,410 @@
+{
+   "_comment": "recipes are normalized to 24 cookie yields",
+   "recipes": [
+      {
+         "name": "Fruity flapjack cookies",
+         "ingredients": [{
+               "amount": 125,
+               "unit": "g",
+               "ingredient": "jumbo oats"
+            },
+            {
+               "amount": 150,
+               "unit": "g",
+               "ingredient": "softened butter"
+            },
+            {
+               "amount": 100,
+               "unit": "g",
+               "ingredient": "light muscovado sugar"
+            },
+            {
+               "amount": 60,
+               "unit": "g",
+               "ingredient": "egg"
+            },
+            {
+               "amount": 20,
+               "unit": "g",
+               "ingredient": "golden syrup"
+            },
+            {
+               "amount": 3,
+               "unit": "g",
+               "ingredient": "vanilla extract"
+            },
+            {
+               "amount": 100,
+               "unit": "g",
+               "ingredient": "self-raising flour"
+            },
+            {
+               "amount": 100,
+               "unit": "g",
+               "ingredient": "mixed dried fruit or raisins"
+            },
+            {
+               "amount": 75,
+               "unit": "g",
+               "ingredient": "dried apricots, finely chopped"
+            },
+            {
+               "amount": 50,
+               "unit": "g",
+               "ingredient": "desiccated coconut"
+            },
+            {
+               "amount": 3,
+               "unit": "g",
+               "ingredient": "ground cinnamon (optional)"
+            }
+         ],
+         "baking time": 15,
+         "heat": 180
+      }
+      
+   ],
+   "ingredients": [{
+         "name": "all-purpose flour",
+         "category": "flour"
+      },
+      {
+         "name": "baking soda",
+         "category": "rising"
+      },
+      {
+         "name": "baking powder",
+         "category": "rising"
+      },
+      {
+         "name": "softened butter",
+         "category": "fat"
+      },
+      {
+         "name": "white sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "vanilla extract",
+         "category": "flavour"
+      },
+      {
+         "name": "eggs",
+         "category": "eggs"
+      },
+      {
+         "name": "salt",
+         "category": "salt"
+      },
+      {
+         "name": "ground cinnamon",
+         "category": "flavour"
+      },
+      {
+         "name": "packed brown sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "quick cooking oats",
+         "category": "flour"
+      },
+      {
+         "name": "milk",
+         "category": "liquid"
+      },
+      {
+         "name": "white chocolate chips",
+         "category": "chocolate"
+      },
+      {
+         "name": "unsweetened cocoa powder",
+         "category": "chocolate"
+      },
+      {
+         "name": "jumbo oats",
+         "category": "flour"
+      },
+      {
+         "name": "light muscovado sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "egg",
+         "category": "eggs"
+      },
+      {
+         "name": "golden syrup",
+         "category": "sugar"
+      },
+      {
+         "name": "self-raising flour",
+         "category": "flour"
+      },
+      {
+         "name": "mixed dried fruit or raisins",
+         "category": "fruit"
+      },
+      {
+         "name": "dried apricots, finely chopped",
+         "category": "fruit"
+      },
+      {
+         "name": "desiccated coconut",
+         "category": "fruit"
+      },
+      {
+         "name": "ground cinnamon (optional)",
+         "category": "flavour"
+      },
+      {
+         "name": "butter",
+         "category": "fat"
+      },
+      {
+         "name": "demerara sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "plain flour",
+         "category": "flour"
+      },
+      {
+         "name": "bicarbonate of soda",
+         "category": "rising"
+      },
+      {
+         "name": "porridge oats",
+         "category": "flour"
+      },
+      {
+         "name": "ready-to-eat dried apricots, chopped",
+         "category": "fruit"
+      },
+      {
+         "name": "stem ginger , chopped",
+         "category": "fruit"
+      },
+      {
+         "name": "dried sour cherries",
+         "category": "fruit"
+      },
+      {
+         "name": "boiling water",
+         "category": ""
+      },
+      {
+         "name": "eggs, beaten",
+         "category": "eggs"
+      },
+      {
+         "name": "unsalted butter, at room temperature",
+         "category": "fat"
+      },
+      {
+         "name": "golden caster sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "plain chocolate, 50-70% cocoa, roughly chopped",
+         "category": "chocolate"
+      },
+      {
+         "name": "white chocolate, roughly chopped",
+         "category": "chocolate"
+      },
+      {
+         "name": "natural colour glaced cherry , roughly chopped",
+         "category": "fruit"
+      },
+      {
+         "name": "icing sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "egg yolks",
+         "category": "egg"
+      },
+      {
+         "name": "zest and juice of an orange",
+         "category": "fruit"
+      },
+      {
+         "name": "icing sugar, sifted",
+         "category": "sugar"
+      },
+      {
+         "name": "sprinkles, to decorate",
+         "category": "sugar"
+      },
+      {
+         "name": "salted butter , softened",
+         "category": "fat"
+      },
+      {
+         "name": "caster sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "ground rice",
+         "category": "flour"
+      },
+      {
+         "name": "preserving sugar (or demerara sugar)",
+         "category": "sugar"
+      },
+      {
+         "name": "dark muscovado sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "egg, beaten",
+         "category": "eggs"
+      },
+      {
+         "name": "cocoa powder",
+         "category": "chocolate"
+      },
+      {
+         "name": "cayenne pepper (less or more to taste)",
+         "category": "flavour"
+      },
+      {
+         "name": "dark chilli chocolate, roughly chopped",
+         "category": "chocolate"
+      },
+      {
+         "name": "dark chocolate, roughly chopped",
+         "category": "chocolate"
+      },
+      {
+         "name": "ground ginger",
+         "category": "flavour"
+      },
+      {
+         "name": "butter, chopped",
+         "category": "fat"
+      },
+      {
+         "name": "stem ginger , chopped (not too finely), plus thin slices, to decorate (optional)",
+         "category": "fruit"
+      },
+      {
+         "name": "dark chocolate, chopped",
+         "category": "chocolate"
+      },
+      {
+         "name": "unsalted butter, softened",
+         "category": "fat"
+      },
+      {
+         "name": "black treacle",
+         "category": "sugar"
+      },
+      {
+         "name": "light brown sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "fine sea salt",
+         "category": "salt"
+      },
+      {
+         "name": "ground cloves",
+         "category": "flavour"
+      },
+      {
+         "name": "salted butter, softened",
+         "category": "fat"
+      },
+      {
+         "name": "milk chocolate, chopped",
+         "category": "chocolate"
+      },
+      {
+         "name": "white chocolate, chopped",
+         "category": "chocolate"
+      },
+      {
+         "name": "light brown soft sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "red food colouring gel",
+         "category": "flavour"
+      },
+      {
+         "name": "salted butter",
+         "category": "fat"
+      },
+      {
+         "name": "egg yolk",
+         "category": "eggs"
+      },
+      {
+         "name": "maple syrup",
+         "category": "sugar"
+      },
+      {
+         "name": "dried mango",
+         "category": "fruit"
+      },
+      {
+         "name": "black sesame seeds",
+         "category": "flavour"
+      },
+      {
+         "name": "flavourless oil",
+         "category": "fat"
+      },
+      {
+         "name": "puffed rice cereal",
+         "category": "flour"
+      },
+      {
+         "name": "dark chocolate chips",
+         "category": "chocolate"
+      },
+      {
+         "name": "soft brown sugar",
+         "category": "sugar"
+      },
+      {
+         "name": "marmalade",
+         "category": "fruit"
+      },
+      {
+         "name": "ground mixed spice",
+         "category": "flavour"
+      },
+      {
+         "name": "dried fruit",
+         "category": "fruit"
+      },
+      {
+         "name": "nuts",
+         "category": "fruit"
+      },
+      {
+         "name": "ground almond",
+         "category": "fruit"
+      },
+      {
+         "name": "chewy toffees",
+         "category": "sugar"
+      },
+      {
+         "name": "dried apple chunks",
+         "category": "fruit"
+      },
+      {
+         "name": "egg white",
+         "category": "eggs"
+      },
+      {
+         "name": "pecan",
+         "category": "fruit"
+      }
+   ]
+
+
+}
