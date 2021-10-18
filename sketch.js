@@ -1,7 +1,6 @@
 // HENRI:
 // Heavenly Evolutionary New Recipe Intelligence
 
-
 let json = {};
 let recipes = [];
 let allIngredients = []; 
@@ -13,19 +12,19 @@ let recipe_number = 0;
 let history = [];
 let totalHistory = [];
 
-
 // fitness
 const maxCategoryBonus = 20; // half of this is the bonus for 2 items in same cat.
 const multipleCatDeduct = 8; // when there are multiples in more than 1 cat.
 
 function preload() {
   json = loadJSON("data/recipes-no-soup.json");
+  // json = loadJSON("data/flapjack.json");
 }
 
 function setup() {
 
   // REMOVE ME
-  randomSeed(0);
+  // randomSeed(0);
 
   createCanvas(400, 800);
   recipes = json.recipes;
@@ -47,7 +46,7 @@ function setup() {
   evaluateRecipes(population);
   population.sort((a, b) => b.fitness - a.fitness);
   
-  frameRate(2);
+  // frameRate(2);
 }
 
 function draw(){
@@ -67,8 +66,8 @@ function draw(){
   }
   text(recipe_text, 40, 40);
   
-  // if (frameCount == 20)
-    // saveJSON(totalHistory);
+  if (frameCount == 200)
+    saveJSON(totalHistory);
   
   // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
   // noLoop();
@@ -85,6 +84,7 @@ function evaluateRecipes(recipes) {
     for (const i of r.ingredients){
       let ingredientListItem = ingredientsList.find(o => o.name === i.ingredient);
       categories.push(ingredientListItem.category);  
+
     }
 
     const counts = {};
@@ -111,7 +111,6 @@ function evaluateRecipes(recipes) {
 
           r.fitness += maxCategoryBonus - (( maxCategoryBonus / 2) / ( 2 ** counts[key] ));
           multiples = true;
-          
         }
       }
     }
@@ -127,6 +126,7 @@ function evaluateRecipes(recipes) {
     let sugarW = 0;
     let fatW = 0;
     let saltW = 0;
+    let eggW = 0;
     let nonEssentialWeight = 0;
 
     for (const i of r.ingredients){
@@ -147,8 +147,11 @@ function evaluateRecipes(recipes) {
       else if (ingredientListItem.category == "fat"){
         fatW += i.amount;
       }
+      else if (ingredientListItem.category == "eggs"){
+        eggW += i.amount;
+      }
       else if (ingredientListItem.category == "salt"){
-        saltW += i.amount;
+          saltW += i.amount;
       }
       else{
         nonEssentialWeight += i.amount;
@@ -156,7 +159,7 @@ function evaluateRecipes(recipes) {
       
     }
 
-    let essentialWeight = flourW + liquidW + risingW + sugarW + fatW + saltW;
+    let essentialWeight = flourW + liquidW + risingW + sugarW + fatW + saltW + eggW;
     // normalize
     flourW = flourW / essentialWeight;
     liquidW = liquidW / essentialWeight;
@@ -164,38 +167,42 @@ function evaluateRecipes(recipes) {
     sugarW = sugarW / essentialWeight;
     fatW = fatW / essentialWeight;
     saltW = saltW /essentialWeight;
+    eggW = eggW / essentialWeight;
 
     // fitness -= difference * weighing
-    r.fitness -= Math.abs(flourW - 0.5) * 50;
-    r.fitness -= Math.abs(fatW - 0.33) * 50;
-    r.fitness -= Math.abs(sugarW - 0.16) * 50;
-    r.fitness -= Math.max(liquidW - 0.05, 0) * 100; // no deduction for low liquid
-    r.fitness -= Math.abs(risingW - 0.015) * 500;
-    r.fitness -= Math.abs(saltW - 0.015) * 400;
+    r.fitness -= Math.abs(flourW - 0.45) * 52.5;
+    r.fitness -= Math.abs(fatW - 0.33) * 55;
+    r.fitness -= Math.abs(sugarW - 0.16) * 56;
+    r.fitness -= Math.max(liquidW - 0.05, 0) * 101; // no deduction for low liquid
+    r.fitness -= Math.abs(risingW - 0.015) * 220;
+    r.fitness -= Math.abs(saltW - 0.015) * 97;
+    r.fitness -= Math.abs(eggW - 0.1) * 48;
 
     // -----
 
     // deduct points if too many non-essentials
-    if (nonEssentialWeight > essentialWeight / 2.50){
-      r.fitness -= (nonEssentialWeight / essentialWeight) * 50;
+    if (nonEssentialWeight > essentialWeight / 2.44){
+      r.fitness -= (nonEssentialWeight / essentialWeight) * 11;
     }
 
-    // bonus points for flavor & herbs
+    // bonus points for flavour
 
     for (const i of r.ingredients){
       let ingredientListItem = ingredientsList.find(o => o.name === i.ingredient);
 
       if (ingredientListItem.category == "flavour"){
-        r.fitness += 2;
-      }
-      if (ingredientListItem.category == "herb"){
         r.fitness += 1;
       }
     }
 
-    // deduction for many ingredients
+    
+    // no boring recipes please
+    if (r.ingredients.length < 6){
+      r.fitness -= 2;
+    }
 
-    r.fitness -= r.ingredients.length ;
+    // deduction for many ingredients
+    r.fitness -= r.ingredients.length * 1.8;
 
   }
 }
@@ -316,8 +323,11 @@ function normaliseRecipe(r) {
   let sum = r.ingredients.reduce((a, i) => a + i.amount, 0);
   // calculate the scaling factor to 1L of soup (ingredients)
   let scale = 1000 / sum;
-  // rescale all of the ingredient amounts
+  // rescale all of the ingredient amounts and get rid of stuff that's 1g or less
   for (let i of r.ingredients) {
-    i.amount = max(1, int(i.amount * scale));
+    i.amount = max(1, i.amount * scale);
+    if (i.amount <= 1) {
+      r.ingredients = r.ingredients.filter(e => e.name !== i.name);
+    }
   }
 }
