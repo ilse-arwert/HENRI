@@ -11,7 +11,8 @@ function setup() {
 
   recipes = json.recipes;
   
-  // extract all of the ingredients from the inspiring set
+  // extract all of the unique ingredients from the inspiring set and output a JSON with them
+  // this helped us create the ingredients array that is in the JSON file with the recipes
   for (const r of recipes) {
     for (const i of r.ingredients) {
 

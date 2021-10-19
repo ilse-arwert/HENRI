@@ -6,19 +6,18 @@ let recipes = [];
 let allIngredients = []; 
 let ingredientsList = []; // with categories, from json
 let population = [];
-let populationSize = 20; // could be higher!
+let populationSize = 20;
 
 let recipe_number = 0;
 let history = [];
 let totalHistory = [];
 
-// fitness
-const maxCategoryBonus = 20; // half of this is the bonus for 2 items in same cat.
-const multipleCatDeduct = 8; // when there are multiples in more than 1 cat.
+// bonuses and deductions for evaluating fitness
+const maxCategoryBonus = 20;
+const multipleCatDeduct = 8;
 
 function preload() {
   json = loadJSON("data/recipes-no-soup.json");
-  // json = loadJSON("data/flapjack.json");
 }
 
 function setup() {
@@ -31,7 +30,6 @@ function setup() {
   ingredientsList = json.ingredients;
   
   // extract all of the ingredients from the inspiring set
-  // TODO: Replace this with our JSON ingredient list?
   for (const r of recipes) {
     for (const i of r.ingredients) {
       allIngredients.push(i);
@@ -45,8 +43,6 @@ function setup() {
 
   evaluateRecipes(population);
   population.sort((a, b) => b.fitness - a.fitness);
-  
-  // frameRate(2);
 }
 
 function draw(){
@@ -66,11 +62,9 @@ function draw(){
   }
   text(recipe_text, 40, 40);
   
-  // if (frameCount == 200)
-  //   saveJSON(totalHistory);
-  
-  // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
-  // noLoop();
+  // After 200 generations, we output a file with all the generated recipes so that we can examine the output
+  if (frameCount == 200)
+    saveJSON(totalHistory);
 }
 
 function evaluateRecipes(recipes) {
@@ -78,8 +72,8 @@ function evaluateRecipes(recipes) {
     
     r.fitness = 0;
 
-    // Points for ingredients in same category. 
-    // Slight deductions for multiple categories with multiple ingredients.
+    // Points for ingredients in same category, to try to get multiple complimenting flavours (eg. multiple kinds of chocolate)
+    // Slight deductions for multiple categories with multiple ingredients, to prevent conflicting flavour profiles
     const categories = [];
     for (const i of r.ingredients){
       let ingredientListItem = ingredientsList.find(o => o.name === i.ingredient);
