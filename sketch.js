@@ -66,8 +66,8 @@ function draw(){
   }
   text(recipe_text, 40, 40);
   
-  if (frameCount == 200)
-    saveJSON(totalHistory);
+  // if (frameCount == 200)
+  //   saveJSON(totalHistory);
   
   // REMOVE THIS TO RUN THE THING, added for safety to not overload when printing
   // noLoop();
@@ -100,7 +100,7 @@ function evaluateRecipes(recipes) {
         // TODO: replace with stored list of essentials
         if (key != "flour" && 
             key != "rising" && 
-            key != "butter" && 
+            key != "fat" && 
             key != "sugar" &&
             key != "salt" &&
             key != "liquid" &&
@@ -197,7 +197,7 @@ function evaluateRecipes(recipes) {
 
     
     // no boring recipes please
-    if (r.ingredients.length < 6){
+    if (r.ingredients.length < 7){
       r.fitness -= 2;
     }
 
